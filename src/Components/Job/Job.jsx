@@ -1,3 +1,6 @@
+import { MdOutlineLocationOn } from "react-icons/md";
+import { CiDollar } from "react-icons/ci";
+
 const Job = ({ job }) => {
   const {
     logo,
@@ -6,11 +9,11 @@ const Job = ({ job }) => {
     remote_or_onsite,
     location,
     job_type,
-    salary,
+    salary
   } = job;
 
   return (
-    <div className="card card-compact  bg-base-100 shadow-xl">
+    <div className="card card-compact  bg-base-100 shadow-lg mt-10">
       <figure>
         <img src={logo} alt="Shoes" />
       </figure>
@@ -25,8 +28,12 @@ const Job = ({ job }) => {
             {job_type}
           </button>
         </div>
-        <div className="card-actions ">
-          <button className="btn btn-primary">View Details</button>
+        <div className="mt-4 flex">
+          <h2 className="flex mr-4"><MdOutlineLocationOn className="text-2xl mr-2"></MdOutlineLocationOn>{location}</h2>
+          <h2 className="flex"><CiDollar className="text-2xl"></CiDollar>{salary}</h2>
+        </div>
+        <div className="card-actions mt-4">
+          <button className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">View Details</button>
         </div>
       </div>
     </div>

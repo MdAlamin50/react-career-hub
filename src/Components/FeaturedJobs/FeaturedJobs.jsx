@@ -23,6 +23,9 @@ const FeaturedJobs = () => {
                     jobs.map(job => <Job key={job.id} job={job}></Job>)
                 }
             </div>
+            <div className="text-center mt-5">
+            <button className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">See All Jobs</button>
+            </div>
         </div>
     );
 };
