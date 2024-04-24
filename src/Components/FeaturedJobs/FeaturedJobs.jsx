@@ -30,4 +30,4 @@ const FeaturedJobs = () => {
     );
 };
 
-export default FeaturedJobs;
+export default FeaturedJobs; 

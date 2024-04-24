@@ -1,8 +1,9 @@
 import { MdOutlineLocationOn } from "react-icons/md";
 import { CiDollar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
-  const {
+  const {id,
     logo,
     job_title,
     company_name,
@@ -31,9 +32,11 @@ const Job = ({ job }) => {
         <div className="mt-4 flex">
           <h2 className="flex mr-4"><MdOutlineLocationOn className="text-2xl mr-2"></MdOutlineLocationOn>{location}</h2>
           <h2 className="flex"><CiDollar className="text-2xl"></CiDollar>{salary}</h2>
-        </div>
+        </div> 
         <div className="card-actions mt-4">
+          <Link to={`/job/${id}`}>
           <button className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">View Details</button>
+          </Link>
         </div>
       </div>
     </div>
