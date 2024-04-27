@@ -24,7 +24,7 @@ const FeaturedJobs = () => {
                 }
             </div>
             <div className="text-center mt-5">
-            <button className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] ">See All Jobs</button>
+            <button className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-[white] ">See All Jobs</button>
             </div>
         </div>
     );

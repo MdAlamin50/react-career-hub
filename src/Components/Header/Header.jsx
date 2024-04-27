@@ -9,12 +9,18 @@ const Header = () => {
       <li>
         <NavLink to="jobs">Jobs</NavLink>
       </li>
-      <li><NavLink to="/applied">Applied Jobs</NavLink></li>
-      <li><NavLink to="/statistics">Statistics</NavLink></li>
-      <li><NavLink to="/blogs">Blogs</NavLink></li>
+      <li>
+        <NavLink to="/applied">Applied Jobs</NavLink>
+      </li>
+      <li>
+        <NavLink to="/statistics">Statistics</NavLink>
+      </li>
+      <li>
+        <NavLink to="/blogs">Blogs</NavLink>
+      </li>
     </>
   );
- 
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -39,18 +45,18 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-          {links}
+            {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-3xl font-bold">CareerHub</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-         {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-[white] ">
+          Star Applying
+        </a>
       </div>
     </div>
   );
