@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../Utlility/Localstorage";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { CiDollar } from "react-icons/ci";
+import AppliedBaner from "./AppliedBaner/AppliedBaner";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
@@ -42,8 +43,9 @@ const AppliedJobs = () => {
   }, [jobs]);
   return (
     <div className="">
+      <AppliedBaner></AppliedBaner>
       <details className="dropdown">
-        <summary className="m-1 btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-[white]">
+        <summary className="m-1 btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-[white] mt-5">
           open or close
         </summary>
         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
